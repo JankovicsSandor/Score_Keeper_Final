@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/table">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/teamA_label"
+                    style="@style/team" />
+                <TextView
+                    android:id="@+id/teamA_points"
+                    style="@style/result"
+                    android:text="0"/>
+                <Button
+                    android:id="@+id/plus3A"
+                    style="@style/buttons"
+                    android:text="@string/point3"
+                    android:onClick="plus3"/>
+                <Button
+                    android:id="@+id/plus2A"
+                    style="@style/buttons"
+                    android:text="@string/point2"
+                    android:onClick="plus2"/>
+                <Button
+                    android:id="@+id/plus1A"
+                    style="@style/buttons"
+                    android:text="@string/point1"
+                    android:onClick="plus1"/>
+                <TextView
+                    android:id="@+id/turnA"
+                    style="@style/turnindicate"
+                    android:text="@string/turnA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/teamB_label"
+                    style="@style/team" />
+                <TextView
+                    android:id="@+id/teamB_points"
+                    style="@style/result"
+                    android:text="0"/>
+
+                <Button
+                    android:id="@+id/plus3B"
+                    style="@style/buttons"
+                    android:onClick="plus3"
+                    android:text="@string/point3" />
+
+                <Button
+                    android:id="@+id/plus2B"
+                    style="@style/buttons"
+                    android:text="@string/point2"
+                    android:onClick="plus2"/>
+                <Button
+                    android:id="@+id/plus1B"
+                    style="@style/buttons"
+                    android:text="@string/point1"
+                    android:onClick="plus1"/>
+                <TextView
+                    android:id="@+id/turnB"
+                    style="@style/turnindicate"
+                    android:text="@string/turnB"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    <Button
+        style="@style/resetbut"
+        android:onClick="reset"
+        android:text="Reset"/>
+</RelativeLayout>
