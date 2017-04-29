@@ -9,77 +9,75 @@
             android:orientation="horizontal"
             android:id="@+id/table">
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                style="@style/linears">
                 <TextView
                     android:id="@+id/teamA_label"
                     style="@style/team" />
                 <TextView
                     android:id="@+id/teamA_points"
                     style="@style/result"
-                    android:text="0"/>
+                    android:text="@string/basicresult"/>
                 <Button
                     android:id="@+id/plus3A"
                     style="@style/buttons"
-                    android:text="@string/point3"
-                    android:onClick="plus3"/>
+                    android:background="@android:color/holo_red_light"
+                    android:text="@string/point3" />
                 <Button
                     android:id="@+id/plus2A"
                     style="@style/buttons"
-                    android:text="@string/point2"
-                    android:onClick="plus2"/>
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="@string/point2" />
                 <Button
                     android:id="@+id/plus1A"
                     style="@style/buttons"
+                    android:background="@color/yellow"
                     android:text="@string/point1"
-                    android:onClick="plus1"/>
+                    />
                 <TextView
                     android:id="@+id/turnA"
                     style="@style/turnindicate"
-                    android:text="@string/turnA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:text="@string/turnA"/>
             </LinearLayout>
+
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                style="@style/linears">
+
                 <TextView
                     android:id="@+id/teamB_label"
                     style="@style/team" />
+
                 <TextView
                     android:id="@+id/teamB_points"
                     style="@style/result"
-                    android:text="0"/>
+                    android:text="@string/basicresult" />
 
                 <Button
                     android:id="@+id/plus3B"
                     style="@style/buttons"
-                    android:onClick="plus3"
+                    android:background="@android:color/holo_red_light"
                     android:text="@string/point3" />
 
                 <Button
                     android:id="@+id/plus2B"
                     style="@style/buttons"
-                    android:text="@string/point2"
-                    android:onClick="plus2"/>
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="@string/point2" />
+
                 <Button
                     android:id="@+id/plus1B"
                     style="@style/buttons"
-                    android:text="@string/point1"
-                    android:onClick="plus1"/>
+                    android:background="@color/yellow"
+                    android:text="@string/point1" />
+
                 <TextView
                     android:id="@+id/turnB"
                     style="@style/turnindicate"
-                    android:text="@string/turnB"/>
+                    android:text="@string/turnB" />
             </LinearLayout>
 
         </LinearLayout>
     <Button
         style="@style/resetbut"
-        android:onClick="reset"
-        android:text="Reset"/>
+        android:id="@+id/reset"
+        android:text="@string/reset"/>
 </RelativeLayout>

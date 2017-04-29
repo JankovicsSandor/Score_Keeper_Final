@@ -1,50 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/backg"
-    >
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/backg">
+
         <TextView
             style="@style/first"
-            android:text="Player A name:"
-            android:gravity="center_horizontal"/>
+            android:gravity="center_horizontal"
+            android:text="@string/PlayerA" />
+
         <EditText
             android:id="@+id/playerA"
             style="@style/first"
-            android:hint="Enter your name"/>
+            android:hint="@string/hint" />
+
         <TextView
             style="@style/first"
-            android:text="Player B name:"
-            android:gravity="center_horizontal"/>
+            android:gravity="center_horizontal"
+            android:text="@string/PlayerB" />
+
         <EditText
-            style="@style/first"
             android:id="@+id/playerB"
-            android:hint="Enter your name"/>
+            style="@style/first"
+            android:hint="@string/hint" />
+
         <Button
+            android:id="@+id/send"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:text="@string/start" />
 
-            android:text="Start"
-            android:onClick="Send"/>
         <TextView
             android:id="@+id/check"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/rules"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="15dp"
-            android:textColor="@android:color/holo_red_dark"/>
+            style="@style/details"
+            android:text="@string/rules" />
 
     </LinearLayout>
-
-
-</RelativeLayout>
 

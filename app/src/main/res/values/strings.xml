@@ -7,5 +7,11 @@
     <string name="point1">Yellow Stick</string>
     <string name="rules">Red Stick worth 10 pts(4/10)\nBlue Stick worth 5 pts(7/10)\nYellow worth 1 pts(9/10)\nKeep in mind that the win is not always sure.
     The numbers in the brackets mean the chance to win that amount.You have 10 rounds after we shall see who has more luck</string>
+    <string name="basicresult">0</string>
+    <string name="hint">Enter your name</string>
+    <string name="PlayerA">Player A name: </string>
+    <string name="PlayerB">Player B name:</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
 
 </resources>
